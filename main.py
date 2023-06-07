@@ -9,8 +9,8 @@ def main(args):
         filter_classes = ['person']
 
     detect = ASOne(
-        tracker=asone.BYTETRACK,
-        detector=asone.YOLOV7_PYTORCH,
+        tracker=asone.DEEPSORT,
+        detector=asone.YOLONAS_M_PYTORCH,
         weights=args.weights,
         use_cuda=args.use_cuda
         )
